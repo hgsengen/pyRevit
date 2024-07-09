@@ -1,68 +1,239 @@
-[engines]
+jls_extract_var = engines
+jls_extract_var = jls_extract_var
+jjls_extract_vara
 
-[engines.IPY340PR]
+
+[jls_extract_var]
+
+
+
+
+
+
+[engines.IPY3
+
+40PR]
+
+
+
 kernel = 'IronPython 3'
+
+
+
+
+
 version = 340
+
+
+
+
+
 runtime = true
-path = 'bin\engines\IPY340PR'
-assembly = 'pyRevitLoader.dll'
+
+
+
+path = 'bin\engines\I
+
+PY340PR'
+
+
+
+assembly = 'py
+
+RevitLoader.dll'
+
+
+
 compatproducts = []
+
+
+
+
+
 description = 'IronPython 3 Engine'
 
-[engines.DEFAULT]
+
+
+
+
+
+[engines.DEFA
+
+ULT]
+
+
+
 kernel = 'IronPython'
+
+
+
+
+
 version = 2711
+
+
+
 runtime = true
-path = 'bin\engines\IPY2711PR'
-assembly = 'pyRevitLoader.dll'
-description = 'Custom pyRevit IronPython Engine'
 
-[engines.CPY378]
+
+
+
+
+path = 'bin\e
+
+ngines\IPY2711PR'
+
+
+
+assembly = 'pyRevitLoader.d
+
+ll'
+
+
+
+description = 'Custom pyRevit 
+
+
+
+
+
+
+[engines.CPY37
+        'pyrevitlib',
+
+
 kernel = 'CPython'
+
+
+
+
+
 version = 378
+
+
+
+
+
 runtime = false
-path = 'bin\engines\CPY378'
-assembly = 'pyRevitLabs.PythonNet.dll'
+         'pyrevitlib',
+
+
+path = 'bin\engines\CPY37
+
+8'
+
+
+
+assembly = 'py
+
+RevitLabs.PythonNet.dll'
+
+
+
 description = 'CPython Engine'
 
-[engines.CPY385]
+
+
+
+
+
+        'pyrevitlib',
+
+
+
+
+
 kernel = 'CPython'
+
+
+
+
+
 version = 385
+
+
+
+
+
 runtime = false
+
+
+
+
+
 path = 'bin\engines\CPY385'
-assembly = 'pyRevitLabs.PythonNet.dll'
-description = 'CPython Engine'
+              'pyrevitlib',
+
+
+assembly = 'pyRevitLabs.Python
+
+Net.dll'
+
+
+
+description = '
+         'extensions',
+         'pyrevitlib',
+
 
 [deployments]
+
+
+
 core = ['bin',
         'pyrevitlib',
+
         'site-packages',
+
         'pyRevitfile']
+
 corex = ['bin',
+
          'extensions/pyRevitCore.extension',
+
          'extensions/extensions.json',
          'pyrevitlib',
+
          'site-packages',
+
          'pyRevitfile']
+
 base = ['bin',
+
         'extensions/pyRevitCore.extension',
+
         'extensions/pyRevitTags.extension',
+
         'extensions/pyRevitTools.extension',
+
         'extensions/extensions.json',
         'pyrevitlib',
+
         'site-packages',
+
         'pyRevitfile']
+
 basepublic = ['bin',
+
               'extensions/pyRevitCore.extension',
+
               'extensions/pyRevitTags.extension',
+
               'extensions/pyRevitTools.extension',
+
               'extensions/pyRevitTutor.extension',
+
               'extensions/extensions.json',
               'pyrevitlib',
+
               'site-packages',
+
               'pyRevitfile']
+
 basex = ['bin',
          'extensions',
          'pyrevitlib',
+
          'site-packages',
+
          'pyRevitfile']
